@@ -24,4 +24,6 @@ export interface TrackMetadataBase {
    * live
    **/
   isLiveStream?: boolean;
+  /** track url **/
+  url?: string;
 }

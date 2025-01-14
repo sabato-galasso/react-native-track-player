@@ -256,6 +256,7 @@ export async function updateMetadataForTrack(
   return TrackPlayer.updateMetadataForTrack(trackIndex, {
     ...metadata,
     artwork: resolveImportedAssetOrPath(metadata.artwork),
+    url: resolveImportedAssetOrPath(metadata.url),
   });
 }
 
