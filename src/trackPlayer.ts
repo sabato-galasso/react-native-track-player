@@ -278,6 +278,7 @@ export function updateNowPlayingMetadata(
   return TrackPlayer.updateNowPlayingMetadata({
     ...metadata,
     artwork: resolveImportedAssetOrPath(metadata.artwork),
+    url: resolveImportedAssetOrPath(metadata.url),
   });
 }
 
